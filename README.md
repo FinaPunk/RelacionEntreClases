@@ -3,9 +3,11 @@
 
 Caso 1: Gestión de Asignaturas Universitarias
 Descripción del Modelo
-  Este sistema administra los departamentos, profesores, asignaturas, sesiones de clases y un gestor académico, aplicando las relaciones de asociación, agregación y composición según las restricciones semánticas del dominio.
+
+Este sistema administra los departamentos, profesores, asignaturas, sesiones de clases y un gestor académico, aplicando las relaciones de asociación, agregación y composición según las restricciones semánticas del dominio.
 
 Clases, Atributos y Métodos
+
 1. Departamento
    Atributos: nombre(String), codigo(String)
    Métodos: agregarProfesor(), listarProfesores()
@@ -23,6 +25,7 @@ Clases, Atributos y Métodos
    Métodos: registrarAsignatura(), consultarAsignatura()
 
 Relaciones y Multiplicidades
+
 Departamento y Profesor (Agregación): `1` Departamento agrupa `1..*` Profesores. Los profesores existen de forma independiente.
 Profesor y Asignatura (Asociación): `1..*` Profesores imparten asignaturas, y cada Asignatura tiene `1` Profesor responsable.
 Asignatura y SesionDeClase (Composición): `1` Asignatura está compuesta por `1..*` Sesiones de Clase. Si la asignatura se elimina, las sesiones desaparecen.
@@ -33,9 +36,11 @@ GestorAcademico y Asignatura (Agregación): `1` Gestor Académico mantiene un re
 Caso 2: Gestión de un Supermercado
 
 Descripción del Modelo
-  Este sistema administra el supermercado, sus secciones, empleados, productos, el inventario y un verificador de stock temporal, aplicando relaciones estructurales y de dependencia.
+
+Este sistema administra el supermercado, sus secciones, empleados, productos, el inventario y un verificador de stock temporal, aplicando relaciones estructurales y de dependencia.
 
 Clases, Atributos y Métodos
+
 1. Supermercado
    Atributos: nombre(String), direccion(String)
    Métodos: abrirSupermercado()
@@ -56,6 +61,7 @@ Clases, Atributos y Métodos
    Métodos: verificar()
 
 Relaciones y Multiplicidades
+
 Supermercado y Empleado (Agregación): `1` Supermercado agrupa `1..*` Empleados independientes.
 Supermercado y Seccion (Composición): `1` Supermercado está compuesto por `1..*` Secciones. Si el supermercado desaparece, las secciones también lo hacen.
 Seccion y Producto (Asociación): `1..*` Secciones exhiben `1..*` Productos (relación M:N). Los productos existen independientemente de las secciones.
