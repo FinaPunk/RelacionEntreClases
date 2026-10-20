@@ -26,10 +26,10 @@ Clases, Atributos y Métodos
 
 Relaciones y Multiplicidades
 
-Departamento y Profesor (Agregación): `1` Departamento agrupa `1..*` Profesores. Los profesores existen de forma independiente.
-Profesor y Asignatura (Asociación): `1..*` Profesores imparten asignaturas, y cada Asignatura tiene `1` Profesor responsable.
-Asignatura y SesionDeClase (Composición): `1` Asignatura está compuesta por `1..*` Sesiones de Clase. Si la asignatura se elimina, las sesiones desaparecen.
-GestorAcademico y Asignatura (Agregación): `1` Gestor Académico mantiene un registro de `0..*` Asignaturas. Las asignaturas pueden transferirse de gestor sin dejar de existir.
+1. Departamento y Profesor (Agregación): `1` Departamento agrupa `1..*` Profesores. Los profesores existen de forma independiente.
+2. Profesor y Asignatura (Asociación): `1..*` Profesores imparten asignaturas, y cada Asignatura tiene `1` Profesor responsable.
+3. Asignatura y SesionDeClase (Composición): `1` Asignatura está compuesta por `1..*` Sesiones de Clase. Si la asignatura se elimina, las sesiones desaparecen.
+4. GestorAcademico y Asignatura (Agregación): `1` Gestor Académico mantiene un registro de `0..*` Asignaturas. Las asignaturas pueden transferirse de gestor sin dejar de existir.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -62,8 +62,8 @@ Clases, Atributos y Métodos
 
 Relaciones y Multiplicidades
 
-Supermercado y Empleado (Agregación): `1` Supermercado agrupa `1..*` Empleados independientes.
-Supermercado y Seccion (Composición): `1` Supermercado está compuesto por `1..*` Secciones. Si el supermercado desaparece, las secciones también lo hacen.
-Seccion y Producto (Asociación): `1..*` Secciones exhiben `1..*` Productos (relación M:N). Los productos existen independientemente de las secciones.
-GestorInventario y Producto (Asociación): `1` Gestor de Inventario mantiene un registro de `0..*` Productos.
-GestorInventario y VerificadorStock (Dependencia): El gestor utiliza temporalmente al verificador de stock en una operación, sin mantenerlo como atributo.
+1. Supermercado y Empleado (Agregación): `1` Supermercado agrupa `1..*` Empleados independientes.
+2. Supermercado y Seccion (Composición): `1` Supermercado está compuesto por `1..*` Secciones. Si el supermercado desaparece, las secciones también lo hacen.
+3. Seccion y Producto (Asociación): `1..*` Secciones exhiben `1..*` Productos (relación M:N). Los productos existen independientemente de las secciones.
+4. GestorInventario y Producto (Asociación): `1` Gestor de Inventario mantiene un registro de `0..*` Productos.
+5. GestorInventario y VerificadorStock (Dependencia): El gestor utiliza temporalmente al verificador de stock en una operación, sin mantenerlo como atributo.
