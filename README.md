@@ -27,6 +27,7 @@ Departamento y Profesor (Agregación): `1` Departamento agrupa `1..*` Profesores
 Profesor y Asignatura (Asociación): `1..*` Profesores imparten asignaturas, y cada Asignatura tiene `1` Profesor responsable.
 Asignatura y SesionDeClase (Composición): `1` Asignatura está compuesta por `1..*` Sesiones de Clase. Si la asignatura se elimina, las sesiones desaparecen.
 GestorAcademico y Asignatura (Agregación): `1` Gestor Académico mantiene un registro de `0..*` Asignaturas. Las asignaturas pueden transferirse de gestor sin dejar de existir.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Caso 2: Gestión de un Supermercado
